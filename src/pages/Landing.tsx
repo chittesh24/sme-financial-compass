@@ -80,15 +80,13 @@ export default function Landing() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
-      <div
-        className="absolute inset-0 -z-10"
-        style={{
-          background: "var(--gradient-hero)",
-        }}
-      />
-        <div className="container mx-auto px-4 py-24 text-center">
-          <div className="mx-auto max-w-3xl">
+      <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl text-white">
+      <p className="mb-8 text-lg text-white/80 sm:text-xl">
+      <Button
+      size="lg"
+      variant="outline"
+      className="border-white/20 bg-white/5 text-white hover:bg-white/10"
+      >
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-foreground backdrop-blur-sm">
               <Sparkles className="h-4 w-4" />
               AI-Powered Financial Intelligence
