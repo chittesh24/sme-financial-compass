@@ -80,24 +80,25 @@ export default function Landing() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
+      <section className="absolute inset-0 -z-10 bg-primary">
+        <div
           style={{
             background: "var(--gradient-hero)",
           }}
         />
         <div className="container mx-auto px-4 py-24 text-center">
           <div className="mx-auto max-w-3xl">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-white/80 backdrop-blur-sm">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-foreground backdrop-blur-sm">
               <Sparkles className="h-4 w-4" />
               AI-Powered Financial Intelligence
             </div>
-            <h1 className="mb-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+            <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
               Financial Health Assessment for{" "}
               <span className="bg-gradient-to-r from-accent to-success bg-clip-text text-transparent">
                 SMEs
               </span>
             </h1>
-            <p className="mb-8 text-lg text-white/70 sm:text-xl">
+            <p className="mb-8 text-lg text-muted-foreground sm:text-xl">
               Analyze your financial statements, identify risks, and get AI-powered
               recommendations to grow your business. Built for small and medium
               enterprises in India.
@@ -114,7 +115,7 @@ export default function Landing() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white/20 bg-white/5 text-white hover:bg-white/10"
+                className="border-white/20 bg-white/5 text-foreground hover:bg-white/10"
                 onClick={() => navigate("/dashboard")}
               >
                 View Demo
