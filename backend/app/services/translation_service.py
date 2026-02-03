@@ -2,7 +2,7 @@
 Multilingual translation service
 """
 import logging
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, List
 from app.services.llm_service import llm_service
 from app.config import settings
 
