@@ -80,55 +80,56 @@ export default function Landing() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-primary">
-        <div
-          className="absolute inset-0 -z-10"
-          style={{ background: "var(--gradient-hero)" }}
-        />
-      
-        <div className="container mx-auto px-4 py-24 text-center">
-          <div className="mx-auto max-w-3xl">
-      
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-white backdrop-blur-sm">
-              <Sparkles className="h-4 w-4" />
-              AI-Powered Financial Intelligence
-            </div>
-      
-            <h1 className="mb-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              Financial Health Assessment for{" "}
-              <span className="bg-gradient-to-r from-accent to-success bg-clip-text text-transparent">
-                SMEs
-              </span>
-            </h1>
-      
-            <p className="mb-8 text-lg text-white/80 sm:text-xl">
-              Analyze your financial statements, identify risks, and get AI-powered
-              recommendations to grow your business.
-            </p>
-      
-            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button
-                size="lg"
-                className="gap-2 bg-accent text-accent-foreground hover:bg-accent/90"
-                onClick={() => navigate("/auth?mode=signup")}
-              >
-                Start Free Analysis
-                <ArrowRight className="h-4 w-4" />
-              </Button>
-      
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white/20 bg-white/5 text-white hover:bg-white/10"
-                onClick={() => navigate("/dashboard")}
-              >
-                View Demo
-              </Button>
-            </div>
-      
+      <section className="relative overflow-hidden">
+      <div
+        className="absolute inset-0 -z-10"
+        style={{ background: "var(--gradient-hero)" }}
+      />
+    
+      <div className="container mx-auto px-4 py-24 text-center">
+        <div className="mx-auto max-w-3xl">
+    
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-white backdrop-blur-sm">
+            <Sparkles className="h-4 w-4" />
+            AI-Powered Financial Intelligence
           </div>
+    
+          <h1 className="mb-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+            Financial Health Assessment for{" "}
+            <span className="bg-gradient-to-r from-accent to-success bg-clip-text text-transparent">
+              SMEs
+            </span>
+          </h1>
+    
+          <p className="mb-8 text-lg text-white/80 sm:text-xl">
+            Analyze your financial statements, identify risks, and get
+            AI-powered recommendations to grow your business. Built for
+            small and medium enterprises in India.
+          </p>
+    
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Button
+              size="lg"
+              className="gap-2 bg-accent text-accent-foreground hover:bg-accent/90"
+              onClick={() => navigate("/auth?mode=signup")}
+            >
+              Start Free Analysis
+              <ArrowRight className="h-4 w-4" />
+            </Button>
+    
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-white/20 bg-white/5 text-white hover:bg-white/10"
+              onClick={() => navigate("/dashboard")}
+            >
+              View Demo
+            </Button>
+          </div>
+    
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Features Section */}
       <section className="py-24">
