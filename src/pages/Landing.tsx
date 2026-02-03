@@ -80,7 +80,7 @@ export default function Landing() {
       </nav>
 
       {/* Hero Section */}
-      <section className="absolute inset-0 -z-10 bg-primary">
+      <section className="relative overflow-hidden bg-primary">
         <div
           style={{
             background: "var(--gradient-hero)",
