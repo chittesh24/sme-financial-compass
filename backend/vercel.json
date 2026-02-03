@@ -12,4 +12,9 @@
       "dest": "main.py"
     }
   ]
+  {
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite"
+  }
 }
