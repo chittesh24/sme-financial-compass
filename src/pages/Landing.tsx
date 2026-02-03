@@ -81,15 +81,17 @@ export default function Landing() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">
+      {/* Background */}
       <div
         className="absolute inset-0 -z-10"
-        style={{ background: "var(--gradient-hero)" }}
+        style={{
+          background: "var(--gradient-hero)",
+        }}
       />
     
       <div className="container mx-auto px-4 py-24 text-center">
         <div className="mx-auto max-w-3xl">
-    
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-white backdrop-blur-sm">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-white/80 backdrop-blur-sm">
             <Sparkles className="h-4 w-4" />
             AI-Powered Financial Intelligence
           </div>
@@ -101,10 +103,10 @@ export default function Landing() {
             </span>
           </h1>
     
-          <p className="mb-8 text-lg text-white/80 sm:text-xl">
-            Analyze your financial statements, identify risks, and get
-            AI-powered recommendations to grow your business. Built for
-            small and medium enterprises in India.
+          <p className="mb-8 text-lg text-white/70 sm:text-xl">
+            Analyze your financial statements, identify risks, and get AI-powered
+            recommendations to grow your business. Built for small and medium
+            enterprises in India.
           </p>
     
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -126,7 +128,6 @@ export default function Landing() {
               View Demo
             </Button>
           </div>
-    
         </div>
       </div>
     </section>
