@@ -81,11 +81,12 @@ export default function Landing() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-primary">
-        <div
-          style={{
-            background: "var(--gradient-hero)",
-          }}
-        />
+      <div
+        className="absolute inset-0 -z-10"
+        style={{
+          background: "var(--gradient-hero)",
+        }}
+      />
         <div className="container mx-auto px-4 py-24 text-center">
           <div className="mx-auto max-w-3xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-foreground backdrop-blur-sm">
