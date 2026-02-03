@@ -23,11 +23,7 @@ class Settings(BaseSettings):
     
     # CORS
     CORS_ORIGINS: List[str] = [
-        "http://localhost:8080",
-        "http://localhost:3000",
-        "http://localhost:5173",
-        "https://*.vercel.app",
-        "https://*.netlify.app"
+        "https://sme-financial-compass.vercel.app/"
     ]
     
     # Database (Supabase)
