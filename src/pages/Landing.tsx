@@ -81,8 +81,6 @@ export default function Landing() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div
-          className="absolute inset-0"
           style={{
             background: "var(--gradient-hero)",
           }}
