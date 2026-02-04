@@ -2,6 +2,10 @@ import { DashboardLayout } from "@/components/layout/DashboardLayout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+<<<<<<< HEAD
+=======
+import { useAuth } from "@/hooks/useAuth";
+>>>>>>> 33a2f18 (first commit)
 import {
   FileText,
   Download,
@@ -81,8 +85,15 @@ const reportTemplates = [
 ];
 
 export default function Reports() {
+<<<<<<< HEAD
   return (
     <DashboardLayout>
+=======
+  const { handleLogout } = useAuth();
+  
+  return (
+    <DashboardLayout onLogout={handleLogout}>
+>>>>>>> 33a2f18 (first commit)
       <div className="space-y-6">
         {/* Header */}
         <div className="flex items-center justify-between">

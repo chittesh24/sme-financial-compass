@@ -5,6 +5,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Slider } from "@/components/ui/slider";
 import { Label } from "@/components/ui/label";
 import { useState } from "react";
+<<<<<<< HEAD
+=======
+import { useAuth } from "@/hooks/useAuth";
+>>>>>>> 33a2f18 (first commit)
 import {
   LineChart,
   Line,
@@ -52,11 +56,19 @@ const combinedData = [
 ];
 
 export default function Forecast() {
+<<<<<<< HEAD
+=======
+  const { handleLogout } = useAuth();
+>>>>>>> 33a2f18 (first commit)
   const [forecastPeriod, setForecastPeriod] = useState("6");
   const [growthRate, setGrowthRate] = useState([8]);
 
   return (
+<<<<<<< HEAD
     <DashboardLayout>
+=======
+    <DashboardLayout onLogout={handleLogout}>
+>>>>>>> 33a2f18 (first commit)
       <div className="space-y-6">
         {/* Header */}
         <div className="flex items-center justify-between">

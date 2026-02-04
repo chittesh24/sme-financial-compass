@@ -16,6 +16,10 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+<<<<<<< HEAD
+=======
+import { useAuth } from "@/hooks/useAuth";
+>>>>>>> 33a2f18 (first commit)
 
 // Sample data for demonstration
 const revenueData = [
@@ -37,9 +41,16 @@ const expenseData = [
 
 export default function Dashboard() {
   const navigate = useNavigate();
+<<<<<<< HEAD
 
   return (
     <DashboardLayout>
+=======
+  const { handleLogout } = useAuth();
+
+  return (
+    <DashboardLayout onLogout={handleLogout}>
+>>>>>>> 33a2f18 (first commit)
       <div className="space-y-6">
         {/* Header */}
         <div className="flex items-center justify-between">

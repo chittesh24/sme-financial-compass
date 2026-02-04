@@ -4,6 +4,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { RevenueChart } from "@/components/dashboard/RevenueChart";
 import { ExpenseBreakdown } from "@/components/dashboard/ExpenseBreakdown";
 import { RiskIndicator } from "@/components/dashboard/RiskIndicator";
+<<<<<<< HEAD
+=======
+import { useAuth } from "@/hooks/useAuth";
+>>>>>>> 33a2f18 (first commit)
 import {
   BarChart,
   Bar,
@@ -62,8 +66,15 @@ const ratios = [
 ];
 
 export default function Analysis() {
+<<<<<<< HEAD
   return (
     <DashboardLayout>
+=======
+  const { handleLogout } = useAuth();
+  
+  return (
+    <DashboardLayout onLogout={handleLogout}>
+>>>>>>> 33a2f18 (first commit)
       <div className="space-y-6">
         {/* Header */}
         <div>

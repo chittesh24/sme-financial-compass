@@ -15,6 +15,10 @@ import {
   RefreshCw,
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+<<<<<<< HEAD
+=======
+import { useAuth } from "@/hooks/useAuth";
+>>>>>>> 33a2f18 (first commit)
 
 interface Message {
   role: "user" | "assistant";
@@ -49,6 +53,10 @@ const preGeneratedInsights = [
 
 export default function Insights() {
   const { toast } = useToast();
+<<<<<<< HEAD
+=======
+  const { handleLogout } = useAuth();
+>>>>>>> 33a2f18 (first commit)
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -92,7 +100,11 @@ Would you like me to elaborate on any of these points?`,
   };
 
   return (
+<<<<<<< HEAD
     <DashboardLayout>
+=======
+    <DashboardLayout onLogout={handleLogout}>
+>>>>>>> 33a2f18 (first commit)
       <div className="space-y-6">
         {/* Header */}
         <div className="flex items-center justify-between">

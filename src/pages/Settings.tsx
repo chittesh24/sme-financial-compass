@@ -18,9 +18,17 @@ import {
   Key,
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+<<<<<<< HEAD
 
 export default function Settings() {
   const { toast } = useToast();
+=======
+import { useAuth } from "@/hooks/useAuth";
+
+export default function Settings() {
+  const { toast } = useToast();
+  const { handleLogout } = useAuth();
+>>>>>>> 33a2f18 (first commit)
 
   const handleSave = () => {
     toast({
@@ -30,7 +38,11 @@ export default function Settings() {
   };
 
   return (
+<<<<<<< HEAD
     <DashboardLayout>
+=======
+    <DashboardLayout onLogout={handleLogout}>
+>>>>>>> 33a2f18 (first commit)
       <div className="space-y-6">
         {/* Header */}
         <div>

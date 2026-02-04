@@ -21,6 +21,10 @@ import {
   Plus,
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+<<<<<<< HEAD
+=======
+import { useAuth } from "@/hooks/useAuth";
+>>>>>>> 33a2f18 (first commit)
 
 const industries = [
   "Manufacturing",
@@ -46,6 +50,10 @@ const businessTypes = [
 
 export default function Business() {
   const { toast } = useToast();
+<<<<<<< HEAD
+=======
+  const { handleLogout } = useAuth();
+>>>>>>> 33a2f18 (first commit)
   const [isEditing, setIsEditing] = useState(false);
   const [businessData, setBusinessData] = useState({
     name: "TechCraft Solutions Pvt. Ltd.",
@@ -73,7 +81,11 @@ export default function Business() {
   };
 
   return (
+<<<<<<< HEAD
     <DashboardLayout>
+=======
+    <DashboardLayout onLogout={handleLogout}>
+>>>>>>> 33a2f18 (first commit)
       <div className="space-y-6">
         {/* Header */}
         <div className="flex items-center justify-between">

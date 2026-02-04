@@ -17,6 +17,10 @@ import {
   Loader2,
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+<<<<<<< HEAD
+=======
+import { useAuth } from "@/hooks/useAuth";
+>>>>>>> 33a2f18 (first commit)
 
 const industries = [
   "Manufacturing",
@@ -41,6 +45,10 @@ const fiscalYears = [
 export default function Upload() {
   const navigate = useNavigate();
   const { toast } = useToast();
+<<<<<<< HEAD
+=======
+  const { handleLogout } = useAuth();
+>>>>>>> 33a2f18 (first commit)
   const [files, setFiles] = useState<File[]>([]);
   const [businessName, setBusinessName] = useState("");
   const [industry, setIndustry] = useState("");
@@ -85,7 +93,11 @@ export default function Upload() {
   };
 
   return (
+<<<<<<< HEAD
     <DashboardLayout>
+=======
+    <DashboardLayout onLogout={handleLogout}>
+>>>>>>> 33a2f18 (first commit)
       <div className="mx-auto max-w-4xl space-y-6">
         {/* Header */}
         <div>
