@@ -6,7 +6,7 @@ python-multipart==0.0.9
 # Database
 supabase==2.0.3
 postgrest==0.13.0
-storage3==0.5.5
+storage3>=0.5.4
 realtime==1.0.6
 supafunc==0.3.3
 psycopg2-binary==2.9.9
